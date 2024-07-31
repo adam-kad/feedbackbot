@@ -50,3 +50,24 @@ def forward_message_to_admin(message):
     )
 
     bot.reply_to(message, "Your message has been sent")
+
+
+def send_answer_handler(message):
+    reply_to_message = message.reply_to_message.text
+    user_tg_chat_id = reply_to_message.split(" ")[0][1:-1]
+    user_message_id = reply_to_message.split(" ")[1][1:-1]
+
+    try:
+        bot.send_message(
+            user_tg_chat_id,
+            message.text,
+            reply_to_message_id=user_message_id,
+        )
+    except AttributeError:
+        bot.send_message(
+            user_tg_chat_id,
+            message.text,
+        )
+    bot.send_message(
+        message.chat.id, f"Сообщение для @ успешно отправлено!"
+    )
