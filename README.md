@@ -1,5 +1,10 @@
 # Feedback Bot
 
+<div align="left">
+    <a href="README.md"><img src="https://img.shields.io/badge/English-README.md-brightgreen" alt="English" /></a>
+    <a href="README_RU.md"><img src="https://img.shields.io/badge/Russian-README.ru.md-red" alt="Russian" /></a>
+</div>
+
 Feedback Bot is a Telegram bot designed to provide feedback and assistance. This bot is built using Python and the `pytelegrambotapi` library. You are welcome to contribute and help improve this bot. Visit our [GitHub page](https://github.com/adam-kad/feedbackbot) for more details.
 
 <div align="center">
@@ -45,7 +50,8 @@ This bot does not use a database; instead, I aimed to make the bot as simple as 
         ```env
         TELEGRAM_BOT_TOKEN=your_bot_token_here
         TELEGRAM_WEBHOOK_URL=https://your-webhook-url-here
-        PORT=8000
+        TELEGRAM_WEBHOOK_PORT=8000
+        TELEGRAM_GROUP_ID=-2323434
         ```
 
 2. **Configure webhook (optional):**
