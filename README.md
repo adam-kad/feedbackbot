@@ -1,4 +1,4 @@
-# Feedback Bot
+# Telegram Feedback Bot
 
 <div align="left">
     <a href="README.md"><img src="https://img.shields.io/badge/English-README.md-brightgreen" alt="English"></a>
