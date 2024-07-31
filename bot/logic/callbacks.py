@@ -1,3 +1,4 @@
+from bot import utils
 from bot.settings import bot, TELEGRAM_GROUP_ID
 
 
@@ -10,13 +11,14 @@ def check_admin_status(func):
     return wrapper
 
 
+@check_admin_status
 def remove_feedback_callback(call):
     username = call.message.text.split("\n")[0][4:]
 
     bot.delete_message(TELEGRAM_GROUP_ID, call.message.message_id)
     bot.send_message(
         TELEGRAM_GROUP_ID,
-        f"<b>Сообщение от @{username} успешно удалено!</b>",
+        f"<b>Message from @{username} successfully deleted!</b>",
     )
 
 
@@ -30,6 +32,21 @@ def answer_feedback_callback(call):
     bot.send_message(
         call.message.chat.id,
         f"[{user_chat_id}] [{user_message_id}] "
-        f"\n\nВведите ответ на сообщение реплаем на это сообщение:",
+        f"\n\nEnter a reply to the message Reply to this message:",
     )
 
+
+@check_admin_status
+def blacklist_feedback_callback(call):
+    data = call.data.split("_")
+    user_chat_id = data[2]
+    username = call.message.text.split("\n")[0][4:]
+
+    utils.add_to_blacklist(user_chat_id)
+
+    bot.delete_message(TELEGRAM_GROUP_ID, call.message.message_id)
+    bot.send_message(
+        TELEGRAM_GROUP_ID,
+        f"User @{username} has been added to the blacklist!"
+        f"To remove a user from the blacklist, use /forgive",
+    )

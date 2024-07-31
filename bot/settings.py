@@ -7,6 +7,8 @@ from telebot import TeleBot, types
 from . import config
 
 
+BLACKLIST_FILE = 'bot/db/blacklist.json'
+
 TELEGRAM_BOT_TOKEN = config.telegram_bot_token.get_secret_value()
 TELEGRAM_WEBHOOK_URL = config.telegram_webhook_url
 TELEGRAM_WEBHOOK_PORT = config.telegram_webhook_port
