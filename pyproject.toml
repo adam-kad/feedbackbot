@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "feedbackbot"
+version = "0.1.0"
+description = "Telegram bot for efficiently collecting and managing user feedback."
+authors = ["Adam"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pytelegrambotapi = "^4.21.0"
+python-dotenv = "^1.0.1"
+pydantic = "^2.8.2"
+pydantic-settings = "^2.4.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
