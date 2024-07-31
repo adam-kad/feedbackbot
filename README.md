@@ -8,8 +8,10 @@ Feedback Bot is a Telegram bot designed to provide feedback and assistance. This
 </div>
 
 
-## Requirements
+## About the Bot
+This bot does not use a database; instead, I aimed to make the bot as simple as possible for use. For adding users to the blacklist, I used a JSON file, but you can customize this as needed. The bot supports both polling and webhook modes.
 
+## Requirements
 - Python 3.11+
 - Poetry for dependency management
 - `pytelegrambotapi` library
