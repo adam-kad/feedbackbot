@@ -37,7 +37,7 @@ Feedback Bot is a Telegram bot designed to provide feedback and assistance. This
         ```env
         TELEGRAM_BOT_TOKEN=your_bot_token_here
         TELEGRAM_WEBHOOK_URL=https://your-webhook-url-here
-        PORT=9000
+        PORT=8000
         ```
 
 2. **Configure webhook (optional):**

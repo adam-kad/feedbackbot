@@ -10,6 +10,7 @@ from . import config
 TELEGRAM_BOT_TOKEN = config.telegram_bot_token.get_secret_value()
 TELEGRAM_WEBHOOK_URL = config.telegram_webhook_url
 TELEGRAM_WEBHOOK_PORT = config.telegram_webhook_port
+TELEGRAM_GROUP_ID = config.telegram_group_id
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)

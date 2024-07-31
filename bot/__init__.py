@@ -13,6 +13,7 @@ class AppConfig(BaseSettings):
     telegram_bot_token: SecretStr
     telegram_webhook_url: Optional[str]
     telegram_webhook_port: Optional[int]
+    telegram_group_id: Optional[int]
 
     class Config:
         env_file = 'feedbackbot/config/.env'

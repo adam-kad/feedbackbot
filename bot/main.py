@@ -2,7 +2,7 @@ import argparse
 import logging
 
 from bot import settings
-from bot.handlers import default
+from bot.logic import handlers, callbacks
 from bot.settings import bot
 
 
@@ -11,9 +11,19 @@ logger = logging.getLogger(__name__)
 
 
 def run_handlers():
-    bot.register_message_handler(default.start_handler, commands=["start"])
-    bot.register_message_handler(default.help_handler, commands=["help"])
-    bot.register_message_handler(default.info_handler, commands=["info"])
+    bot.register_message_handler(handlers.start_handler, commands=["start"])
+    bot.register_message_handler(handlers.help_handler, commands=["help"])
+    bot.register_message_handler(handlers.info_handler, commands=["info"])
+    bot.register_message_handler(handlers.group_id_handler, commands=["send_group_id"])
+    bot.register_message_handler(
+        handlers.forward_message_to_admin,
+        func=lambda message: not message.text.startswith('/')
+    )
+
+    bot.register_callback_query_handler(
+        callbacks.remove_feedback_callback,
+        func=lambda call: call.data.startswith('remove_id'),
+    )
 
     parser = argparse.ArgumentParser(description="Telegram bot settings")
     parser.add_argument('--webhook', action='store_true', help='Enable webhook mode')

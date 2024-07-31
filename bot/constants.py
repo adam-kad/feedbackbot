@@ -27,6 +27,7 @@ Here's a list of commands you can use to interact with the bot:
 <b>/start</b> - Get a welcome message and an overview of available commands.
 <b>/help</b> - Get a list of all commands and how to use them.
 <b>/info</b> - Learn more about what this bot can do and how it can help you.
+<b>/send_group_id</b> - Get this group ID.
 
 Best regards, <a href="https://github.com/adam-kad/feedbackbot">Feedback Bot</a>
 """
