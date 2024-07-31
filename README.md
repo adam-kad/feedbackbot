@@ -2,6 +2,12 @@
 
 Feedback Bot is a Telegram bot designed to provide feedback and assistance. This bot is built using Python and the `pytelegrambotapi` library. You are welcome to contribute and help improve this bot. Visit our [GitHub page](https://github.com/adam-kad/feedbackbot) for more details.
 
+<div align="center">
+    <img src="./images/user_chat_image.jpg" alt="User Chat Screenshot" width="45%" />
+    <img src="./images/admin_chat_image.jpg" alt="Admin Chat Screenshot" width="45%" />
+</div>
+
+
 ## Requirements
 
 - Python 3.11+
