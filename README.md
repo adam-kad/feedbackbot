@@ -2,7 +2,7 @@
 
 <div align="left">
     <a href="README.md"><img src="https://img.shields.io/badge/English-README.md-brightgreen" alt="English"></a>
-    <a href="README_RU.md"><img src="https://img.shields.io/badge/Russian-README.ru.md-red" alt="Russian"></a>
+    <a href="README_RU.md"><img src="https://img.shields.io/badge/Russian-README.md-red" alt="Russian"></a>
 </div><br>
 
 Feedback Bot is a Telegram bot designed to provide feedback and assistance. This bot is built using Python and the `pytelegrambotapi` library. You are welcome to contribute and help improve this bot. Visit our [GitHub page](https://github.com/adam-kad/feedbackbot) for more details.
