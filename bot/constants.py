@@ -14,7 +14,8 @@ I'm excited to welcome you to our Telegram bot. 🚀 Here's what you need to kno
 <b>Support</b>: If you have any questions or need assistance, just send us a message.
 
 <b>🔹 Need Help?</b>
-If you need any help or have any questions, don't hesitate to reach out by using the <b>/help</b> command or contacting our support.
+If you need any help or have any questions, don't hesitate to reach out by using the <b>/help</b> command or 
+contacting our support.
 
 Thank you for using our bot! We hope you have a great experience. 😊
 
@@ -33,8 +34,8 @@ Best regards, <a href="https://github.com/adam-kad/feedbackbot">Feedback Bot</a>
 """
 
 INFO_MESSAGE = """
-This bot is designed to provide feedback and assistance. We invite you to contribute and help make it better. Visit our <a href="https://github.com/adam-kad/feedbackbot">GitHub page</a> to learn more and get involved.
+This bot is designed to provide feedback and assistance. We invite you to contribute and help make it better. Visit our 
+<a href="https://github.com/adam-kad/feedbackbot">GitHub page</a> to learn more and get involved.
 
 Best regards, <a href="https://github.com/adam-kad/feedbackbot">Feedback Bot</a>
 """
-
